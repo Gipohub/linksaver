@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package linksaver;
+
+service LinkSaver {
+  rpc Save(SaveRequest) returns (SaveResponse);
+  rpc PickRandom(User) returns (Page);
+  rpc PickAll(User) returns (PageList);
+  rpc IsExists(Page) returns (ExistsResponse);
+}
+
+message SaveRequest {
+  string url = 1;
+  string username = 2;
+}
+
+message SaveResponse {
+  string status = 1;
+}
+
+message User {
+  string username = 1;
+}
+
+message Page {
+  string url = 1;
+  string username = 2;
+}
+
+message PageList {
+  repeated Page pages = 1;
+}
+
+message ExistsResponse {
+  bool exists = 1;
+}
