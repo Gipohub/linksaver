@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"linksaver-module/lib/e"
+	"github.com/Gipohub/linksaver/lib/e"
 )
 
 //import "time"

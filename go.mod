@@ -1,3 +1,3 @@
-module github.com/Gipohub/linksaver-module
+module github.com/Gipohub/linksaver
 
 go 1.23.6
