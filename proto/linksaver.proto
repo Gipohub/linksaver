@@ -2,6 +2,9 @@ syntax = "proto3";
 
 package linksaver;
 
+option go_package = "github.com/Gipohub/linksaver/proto;linksaver";
+
+
 service LinkSaver {
   rpc Save(SaveRequest) returns (SaveResponse);
   rpc PickRandom(User) returns (Page);
